@@ -1,14 +1,108 @@
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
 }
-body{
-    overflow: hidden;
-}
-#box{
-    width:100%;
+.banner{
+    position: relative;
+    width: 100%;
     height: 100vh;
 }
+body{
+    background-color: black;
+    overflow: hidden;
+    
+}
+.container{
+    position: absolute;
+    width:100%;
+    height:100vh;
+    background: radial-gradient(blue,black)
+}
+
+.container #scene .layer{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+}
+
+.container #scene .layer img{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    
+}
+#parallax{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../../Controller/content/images/star.png);
+    z-index: 0;
+    object-fit: fill;
+    transform: perspective(50px);
+    
+
+}
+
+#parallax_cloud {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    animation-name: cloud;
+    animation-duration: 40s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+    
+  }
+
+  @keyframes cloud{
+      from{transform: translate(-400px)}
+        to{transform: translate(1600px)} 
+  }
+
+  #parallax_bird {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    animation-name: bird;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    
+  }
+
+  @keyframes bird{
+    from{transform: translate(-800px)}
+      to{transform: translate(1700px)}
+}
+
+  #parallax_cloud img{
+ 
+    width: 20%;
+    height: 20%; 
+    margin-left: 300px;
+    
+
+  }
+
+  #parallax_bird img{
+      width: 20%;
+      height: 20%;
+      margin: 200px;
+      
+  }
+
+
+
+
+
 
 #middle, #bottom{
     position:absolute;
@@ -34,4 +128,5 @@ body{
     z-index: 1;
     max-height: 500px;
     bottom: 0px;
+    
 }

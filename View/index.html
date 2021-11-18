@@ -8,20 +8,40 @@
     <title>Police & Thieve</title>
 </head>
 <body>
+    <section class="banner">
+        <div class="container">
+            <div id=scene>
+                <div class="layer">
+                    <img src="..\Controller\content\images\Nebula.png" alt="planet">
+                </div>
+                <div id="parallax"></div>
+                <div id=parallax_cloud>
+                    <img class=followmouse src="../Controller/content/images/cloud.png">
 
-    <div id=box>
-        <div class="top">
-            <img id="top" src="..\Controller\content\images\cloud.png" alt="sky">
+                    <img class=followmouse src="../Controller/content/images/cloud.png">
+                </div>
+
+                <div id=parallax_bird>
+
+                    <img class=followmouse src="../Controller/content/images/bird.png">
+                    <img class=followmouse src="../Controller/content/images/bird.png">
+                  
+                </div>
+                <div>
+
+                </div>
+
+                <!-- <div class="middle">
+                    <img id="middle" src="..\Controller\content\images\bg.jpg" alt="hidden villiage">
+                </div> -->
+
+
+                <div class="bottom">
+                    <img id="bottom" src="..\Controller\content\images\ground.png" alt="ground">
+                </div>  
+            </div> 
         </div>
-
-        <div class="middle">
-            <img id="middle" src="..\Controller\content\images\bg.jpg" alt="hidden villiage">
-        </div>
-
-
-        <div class="bottom">
-            <img id="bottom" src="..\Controller\content\images\ground.png" alt="ground">
-        </div>
-    </div>    
+</section>   
+<script src="../Controller/parallax.js"></script>
 </body>
 </html>
