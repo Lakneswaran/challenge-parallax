@@ -99,6 +99,25 @@ height: 100vh;
       
   }
 
+ #people{
+     position: absolute;
+     max-width: 900vw;
+     z-index: 9;
+     bottom: 130px;
+     left: calc((30%)/2);
+     display: inline-flex;
+ } 
+
+ #people img{
+    height: 30vh;
+    width: 15vw;
+ }
+ #people img:hover{
+    height: 40vh;
+    width: 20vw; 
+    transition: all ease 1600ms;
+    transform-style: preserve-3d;
+ }
 
 
 
