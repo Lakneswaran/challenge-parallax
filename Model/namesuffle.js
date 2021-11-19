@@ -10,7 +10,7 @@ console.log(random1);
 for(let i =0; i<random1.length; i++){
     
 let rnd = document.getElementById(i+1);
-rnd.innerHTML += "<p>" + random1[i] + " "+ random[i] + "</p>";
+rnd.innerHTML += "<p class='text'>" + random1[i] + " "+ random[i] + "</p>";
 
 }
 function getRandom(arr, n) {
